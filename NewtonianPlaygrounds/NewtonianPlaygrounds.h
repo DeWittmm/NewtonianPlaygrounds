@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 DeWitt.PHYSICS.Playgrounds. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import SpriteKit;
 
 //! Project version number for NewtonianPlaygrounds.
 FOUNDATION_EXPORT double NewtonianPlaygroundsVersionNumber;
@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char NewtonianPlaygroundsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <NewtonianPlaygrounds/PublicHeader.h>
 
-
+//#import <NewtonianPlaygrounds/GameScene-Swift.h>

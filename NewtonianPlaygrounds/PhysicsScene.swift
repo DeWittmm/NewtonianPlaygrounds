@@ -1,5 +1,5 @@
 //
-//  GameScene.swift
+//  PhysicsScene.swift
 //  Newtonian Playgrounds
 //
 //  Created by Michael DeWitt on 10/5/14.
@@ -8,8 +8,9 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
+public class PhysicsScene: SKScene {
+    
+    override public func didMoveToView(view: SKView) {
         /* Setup your scene here */
         let myLabel = SKLabelNode(fontNamed:"Chalkduster")
         myLabel.text = "Hello, World!";
@@ -19,7 +20,7 @@ class GameScene: SKScene {
         self.addChild(myLabel)
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override public func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         /* Called when a touch begins */
         
         for touch: AnyObject in touches {
@@ -39,7 +40,7 @@ class GameScene: SKScene {
         }
     }
    
-    override func update(currentTime: CFTimeInterval) {
+    override public func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
 }
