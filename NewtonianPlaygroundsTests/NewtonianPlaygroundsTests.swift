@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 DeWitt.PHYSICS.Playgrounds. All rights reserved.
 //
 
-import UIKit
 import XCTest
 
 class NewtonianPlaygroundsTests: XCTestCase {

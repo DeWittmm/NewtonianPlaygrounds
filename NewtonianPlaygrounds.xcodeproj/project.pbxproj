@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AA2F49019E31600004DC09B /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2F48F19E31600004DC09B /* PresentationController.swift */; };
-		0AA2F49119E31600004DC09B /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2F48F19E31600004DC09B /* PresentationController.swift */; };
+		0A923C3B19E31CF0002F068D /* PhysicsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0A923C3A19E31CF0002F068D /* PhysicsScene.sks */; };
+		0A923C3C19E31D31002F068D /* PhysicsBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */; };
+		0AA2F49019E31600004DC09B /* PhysicsWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */; };
+		0AA2F49119E31600004DC09B /* PhysicsWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */; };
 		0AA8CD8B19E2600300397927 /* NewtonianPlaygrounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA8CD9519E2600300397927 /* NewtonianPlaygroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CD9419E2600300397927 /* NewtonianPlaygroundsTests.swift */; };
-		0AA8CDA119E2601B00397927 /* PhysicsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CD9F19E2601A00397927 /* PhysicsScene.swift */; };
+		0AA8CDA119E2601B00397927 /* PhysicsBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A923C3A19E31CF0002F068D /* PhysicsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PhysicsScene.sks; path = CircularMotion.playground/Resources/PhysicsScene.sks; sourceTree = "<group>"; };
 		0A9E232719E309870025C075 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		0AA2F48519E30EEA004DC09B /* section-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "section-1.swift"; path = "CircularMotion.playground/section-1.swift"; sourceTree = "<group>"; };
-		0AA2F48619E30EEA004DC09B /* section-3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "section-3.swift"; path = "CircularMotion.playground/section-3.swift"; sourceTree = "<group>"; };
 		0AA2F48919E30F38004DC09B /* contents.xcplayground */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = contents.xcplayground; path = CircularMotion.playground/contents.xcplayground; sourceTree = "<group>"; };
 		0AA2F48A19E30F4D004DC09B /* fragment0.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; name = fragment0.html; path = CircularMotion.playground/Documentation/fragment0.html; sourceTree = "<group>"; };
-		0AA2F48F19E31600004DC09B /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
-		0AA2F49219E31787004DC09B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = CircularMotion.playground/Resources/GameScene.sks; sourceTree = "<group>"; };
+		0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsWorld.swift; sourceTree = "<group>"; };
 		0AA8CD8519E2600300397927 /* NewtonianPlaygrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewtonianPlaygrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA8CD8919E2600300397927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewtonianPlaygrounds.h; sourceTree = "<group>"; };
 		0AA8CD9019E2600300397927 /* NewtonianPlaygroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewtonianPlaygroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA8CD9319E2600300397927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA8CD9419E2600300397927 /* NewtonianPlaygroundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtonianPlaygroundsTests.swift; sourceTree = "<group>"; };
-		0AA8CD9F19E2601A00397927 /* PhysicsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsScene.swift; sourceTree = "<group>"; };
+		0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsBodies.swift; sourceTree = "<group>"; };
 		0AA8CDA319E2605E00397927 /* CircularMotion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CircularMotion.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,23 +50,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AA2F48719E30EEE004DC09B /* Code Sections */ = {
-			isa = PBXGroup;
-			children = (
-				0AA2F48519E30EEA004DC09B /* section-1.swift */,
-				0AA2F48619E30EEA004DC09B /* section-3.swift */,
-			);
-			name = "Code Sections";
-			sourceTree = "<group>";
-		};
 		0AA2F48819E30F01004DC09B /* Circular Motion Playground */ = {
 			isa = PBXGroup;
 			children = (
 				0AA8CDA319E2605E00397927 /* CircularMotion.playground */,
 				0AA2F48919E30F38004DC09B /* contents.xcplayground */,
-				0AA2F49219E31787004DC09B /* GameScene.sks */,
+				0A923C3A19E31CF0002F068D /* PhysicsScene.sks */,
 				0AA2F48B19E30F50004DC09B /* Documentation */,
-				0AA2F48719E30EEE004DC09B /* Code Sections */,
 			);
 			name = "Circular Motion Playground";
 			sourceTree = "<group>";
@@ -102,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				0AA2F48819E30F01004DC09B /* Circular Motion Playground */,
-				0AA8CD9F19E2601A00397927 /* PhysicsScene.swift */,
-				0AA2F48F19E31600004DC09B /* PresentationController.swift */,
+				0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */,
+				0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */,
 				0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */,
 				0AA8CD8819E2600300397927 /* Supporting Files */,
 			);
@@ -224,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A923C3B19E31CF0002F068D /* PhysicsScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA8CDA119E2601B00397927 /* PhysicsScene.swift in Sources */,
-				0AA2F49019E31600004DC09B /* PresentationController.swift in Sources */,
+				0AA8CDA119E2601B00397927 /* PhysicsBodies.swift in Sources */,
+				0AA2F49019E31600004DC09B /* PhysicsWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA8CD9519E2600300397927 /* NewtonianPlaygroundsTests.swift in Sources */,
-				0AA2F49119E31600004DC09B /* PresentationController.swift in Sources */,
+				0AA2F49119E31600004DC09B /* PhysicsWorld.swift in Sources */,
+				0A923C3C19E31D31002F068D /* PhysicsBodies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +267,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -293,10 +285,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx10.10;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -321,7 +313,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Mac Developer";
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -333,9 +325,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.10;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
