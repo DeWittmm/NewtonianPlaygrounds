@@ -30,6 +30,7 @@
 		0AA8CD9419E2600300397927 /* NewtonianPlaygroundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtonianPlaygroundsTests.swift; sourceTree = "<group>"; };
 		0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsBodies.swift; sourceTree = "<group>"; };
 		0AA8CDA319E2605E00397927 /* CircularMotion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CircularMotion.playground; sourceTree = "<group>"; };
+		0AB125C219E66A1B005B170A /* Intro.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Intro.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,7 @@
 		0AA8CD8719E2600300397927 /* NewtonianPlaygrounds */ = {
 			isa = PBXGroup;
 			children = (
+				0AB125C319E66A2C005B170A /* Intro Playground */,
 				0AA2F48819E30F01004DC09B /* Circular Motion Playground */,
 				0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */,
 				0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */,
@@ -123,6 +125,14 @@
 				0AA8CD9319E2600300397927 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AB125C319E66A2C005B170A /* Intro Playground */ = {
+			isa = PBXGroup;
+			children = (
+				0AB125C219E66A1B005B170A /* Intro.playground */,
+			);
+			name = "Intro Playground";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +190,7 @@
 		0AA8CD7C19E2600300397927 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = DeWitt.PHYSICS.Playgrounds;
 				TargetAttributes = {
 					0AA8CD8419E2600300397927 = {
@@ -288,7 +298,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.10;
+				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -328,7 +338,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.10;
+				SDKROOT = macosx;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -340,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -357,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -372,6 +384,7 @@
 		0AA8CD9C19E2600300397927 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -389,6 +402,7 @@
 		0AA8CD9D19E2600300397927 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

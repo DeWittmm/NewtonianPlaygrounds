@@ -32,13 +32,21 @@ public class PhysicsWorld {
         scene = SKScene(fileNamed: ResourceIdentifiers.physicsScene)
         
         // Configure the view.
-        view.showsFPS = true
-        view.showsNodeCount = true
-                
+        //Does not display in playgrounds :(
+//        view.showsFPS = true
+//        view.showsNodeCount = true
+        
+        scene.scaleMode = .AspectFill
+        scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        
+        let backgroundTexture = SKTexture(imageNamed: "star_background")
+        let background = SKSpriteNode(texture:backgroundTexture, size: view.bounds.size)
+        scene.addChild(background)
+
         /* Sprite Kit applies additional optimizations to improve rendering performance */
         //        sceneView.ignoresSiblingOrder = true
         
-        /* Set the scale mode to scale to fit the window */
-        scene.scaleMode = .AspectFill
+        
+        view.presentScene(scene)
     }
 }
