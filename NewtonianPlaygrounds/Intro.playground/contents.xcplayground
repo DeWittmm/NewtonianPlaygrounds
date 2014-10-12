@@ -2,6 +2,9 @@
 <playground version='3.0' sdk='macosx'>
     <sections>
         <code source-file-name='section-1.swift'/>
+        <documentation relative-path='fragment0.html'/>
+        <code source-file-name='section-3.swift'/>
+        <documentation relative-path='fragment2.html'/>
     </sections>
     <timeline fileName='timeline.xctimeline'/>
 </playground>

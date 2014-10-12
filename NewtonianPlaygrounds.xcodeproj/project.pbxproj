@@ -31,6 +31,9 @@
 		0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsBodies.swift; sourceTree = "<group>"; };
 		0AA8CDA319E2605E00397927 /* CircularMotion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CircularMotion.playground; sourceTree = "<group>"; };
 		0AB125C219E66A1B005B170A /* Intro.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Intro.playground; sourceTree = "<group>"; };
+		0AC6894419EB4381000D2F3D /* contents.xcplayground */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = contents.xcplayground; path = Intro.playground/contents.xcplayground; sourceTree = "<group>"; };
+		0AC6894519EB438E000D2F3D /* fragment0.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; name = fragment0.html; path = Intro.playground/Documentation/fragment0.html; sourceTree = "<group>"; };
+		0AC6894719EB4413000D2F3D /* fragment2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; name = fragment2.html; path = Intro.playground/Documentation/fragment2.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +134,19 @@
 			isa = PBXGroup;
 			children = (
 				0AB125C219E66A1B005B170A /* Intro.playground */,
+				0AC6894419EB4381000D2F3D /* contents.xcplayground */,
+				0AC6894619EB4393000D2F3D /* Documentation */,
 			);
 			name = "Intro Playground";
+			sourceTree = "<group>";
+		};
+		0AC6894619EB4393000D2F3D /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				0AC6894519EB438E000D2F3D /* fragment0.html */,
+				0AC6894719EB4413000D2F3D /* fragment2.html */,
+			);
+			name = Documentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

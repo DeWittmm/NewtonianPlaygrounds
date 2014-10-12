@@ -12,6 +12,9 @@ public class PhysicsWorld {
     
     struct ResourceIdentifiers {
         static let physicsScene = "PhysicsScene"
+        struct ImageAssets {
+            static let starBackground = "star_background"
+        }
     }
     
     public let view: SKView
@@ -39,7 +42,7 @@ public class PhysicsWorld {
         scene.scaleMode = .AspectFill
         scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
-        let backgroundTexture = SKTexture(imageNamed: "star_background")
+        let backgroundTexture = SKTexture(imageNamed: ResourceIdentifiers.ImageAssets.starBackground)
         let background = SKSpriteNode(texture:backgroundTexture, size: view.bounds.size)
         scene.addChild(background)
 
