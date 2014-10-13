@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0A923C3B19E31CF0002F068D /* PhysicsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0A923C3A19E31CF0002F068D /* PhysicsScene.sks */; };
-		0A923C3C19E31D31002F068D /* PhysicsBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */; };
 		0AA2F49019E31600004DC09B /* PhysicsWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */; };
 		0AA2F49119E31600004DC09B /* PhysicsWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */; };
 		0AA8CD8B19E2600300397927 /* NewtonianPlaygrounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA8CD9519E2600300397927 /* NewtonianPlaygroundsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CD9419E2600300397927 /* NewtonianPlaygroundsTests.swift */; };
-		0AA8CDA119E2601B00397927 /* PhysicsBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */; };
+		0AC6894919EB7180000D2F3D /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894819EB7180000D2F3D /* Earth.swift */; };
+		0AC6894A19EB7180000D2F3D /* Earth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894819EB7180000D2F3D /* Earth.swift */; };
+		0AC6894D19EB7D8A000D2F3D /* PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894C19EB7D8A000D2F3D /* PhysicsBody.swift */; };
+		0AC6894E19EB7D8A000D2F3D /* PhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894C19EB7D8A000D2F3D /* PhysicsBody.swift */; };
+		0AC6895019EB7FE4000D2F3D /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894F19EB7FE4000D2F3D /* Sun.swift */; };
+		0AC6895119EB7FE4000D2F3D /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894F19EB7FE4000D2F3D /* Sun.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,12 +32,14 @@
 		0AA8CD9019E2600300397927 /* NewtonianPlaygroundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewtonianPlaygroundsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA8CD9319E2600300397927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA8CD9419E2600300397927 /* NewtonianPlaygroundsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtonianPlaygroundsTests.swift; sourceTree = "<group>"; };
-		0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsBodies.swift; sourceTree = "<group>"; };
 		0AA8CDA319E2605E00397927 /* CircularMotion.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CircularMotion.playground; sourceTree = "<group>"; };
 		0AB125C219E66A1B005B170A /* Intro.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Intro.playground; sourceTree = "<group>"; };
 		0AC6894419EB4381000D2F3D /* contents.xcplayground */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = contents.xcplayground; path = Intro.playground/contents.xcplayground; sourceTree = "<group>"; };
 		0AC6894519EB438E000D2F3D /* fragment0.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; name = fragment0.html; path = Intro.playground/Documentation/fragment0.html; sourceTree = "<group>"; };
 		0AC6894719EB4413000D2F3D /* fragment2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; name = fragment2.html; path = Intro.playground/Documentation/fragment2.html; sourceTree = "<group>"; };
+		0AC6894819EB7180000D2F3D /* Earth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Earth.swift; sourceTree = "<group>"; };
+		0AC6894C19EB7D8A000D2F3D /* PhysicsBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsBody.swift; sourceTree = "<group>"; };
+		0AC6894F19EB7FE4000D2F3D /* Sun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sun.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +103,7 @@
 			children = (
 				0AB125C319E66A2C005B170A /* Intro Playground */,
 				0AA2F48819E30F01004DC09B /* Circular Motion Playground */,
-				0AA8CD9F19E2601A00397927 /* PhysicsBodies.swift */,
+				0AC6894B19EB7187000D2F3D /* PhysicsBodies */,
 				0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */,
 				0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */,
 				0AA8CD8819E2600300397927 /* Supporting Files */,
@@ -147,6 +153,16 @@
 				0AC6894719EB4413000D2F3D /* fragment2.html */,
 			);
 			name = Documentation;
+			sourceTree = "<group>";
+		};
+		0AC6894B19EB7187000D2F3D /* PhysicsBodies */ = {
+			isa = PBXGroup;
+			children = (
+				0AC6894C19EB7D8A000D2F3D /* PhysicsBody.swift */,
+				0AC6894819EB7180000D2F3D /* Earth.swift */,
+				0AC6894F19EB7FE4000D2F3D /* Sun.swift */,
+			);
+			name = PhysicsBodies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA8CDA119E2601B00397927 /* PhysicsBodies.swift in Sources */,
+				0AC6895019EB7FE4000D2F3D /* Sun.swift in Sources */,
+				0AC6894D19EB7D8A000D2F3D /* PhysicsBody.swift in Sources */,
 				0AA2F49019E31600004DC09B /* PhysicsWorld.swift in Sources */,
+				0AC6894919EB7180000D2F3D /* Earth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,8 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA8CD9519E2600300397927 /* NewtonianPlaygroundsTests.swift in Sources */,
+				0AC6894E19EB7D8A000D2F3D /* PhysicsBody.swift in Sources */,
+				0AC6895119EB7FE4000D2F3D /* Sun.swift in Sources */,
 				0AA2F49119E31600004DC09B /* PhysicsWorld.swift in Sources */,
-				0A923C3C19E31D31002F068D /* PhysicsBodies.swift in Sources */,
+				0AC6894A19EB7180000D2F3D /* Earth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
