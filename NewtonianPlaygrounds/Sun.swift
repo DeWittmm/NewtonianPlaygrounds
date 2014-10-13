@@ -18,7 +18,9 @@ public class Sun: PhysicsBody {
     
     // MARK: Initializers
     
-    public init(scene: SKScene) {
+    public init(world: PhysicsWorld) {
+        let scene = world.scene
+
         let center = CGPoint(x:CGRectGetMidX(scene.frame), y:CGRectGetMidY(scene.frame))
         
         super.init(imageNamed: ResourceIdentifiers.sunImage)

@@ -20,6 +20,12 @@ public class PhysicsWorld {
     public let view: SKView
     public let scene: SKScene
     
+    public var physics: SKPhysicsWorld {
+        return scene.physicsWorld
+    }
+    
+    public var field: SKFieldNode
+    
     public var gravity: CGVector {
         get {
             return scene.physicsWorld.gravity
@@ -33,6 +39,7 @@ public class PhysicsWorld {
         view = SKView(frame: CGRect(x: 0, y: 0, width: 850, height: 638))
         
         scene = SKScene(fileNamed: ResourceIdentifiers.physicsScene)
+        field = SKFieldNode.radialGravityField()
         
         // Configure the view.
         //Does not display in playgrounds :(
@@ -49,7 +56,7 @@ public class PhysicsWorld {
         /* Sprite Kit applies additional optimizations to improve rendering performance */
         //        sceneView.ignoresSiblingOrder = true
         
-        
+        scene.addChild(field)
         view.presentScene(scene)
     }
 }

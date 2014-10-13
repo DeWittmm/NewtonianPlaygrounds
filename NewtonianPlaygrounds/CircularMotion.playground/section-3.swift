@@ -4,8 +4,8 @@
 let world = PhysicsWorld()
 
 //Add Spaceship
-let earth = Earth(scene: world.scene)
-let sun = Sun(scene: world.scene)
+let earth = Earth(world: world)
+let sun = Sun(world: world)
 
 XCPShowView("Physics World", world.view)
 

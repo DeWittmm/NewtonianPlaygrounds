@@ -31,7 +31,9 @@ public class Earth: PhysicsBody {
     
     // MARK: Initializers
     
-    public init(scene: SKScene) {
+    public init(world: PhysicsWorld) {
+        let scene = world.scene
+
         center = CGPoint(x:CGRectGetMidX(scene.frame), y:CGRectGetMidY(scene.frame))
         
         super.init(imageNamed: ResourceIdentifiers.earthImage)
@@ -40,13 +42,14 @@ public class Earth: PhysicsBody {
         yScale = 0.3
         
         //Setup Actions
-        addActions()
+        // addActions()
         
         physicsBody!.categoryBitMask = EarthCategory
         physicsBody!.contactTestBitMask = EarthCategory
+        physicsBody!.allowsRotation = true
         
         scene.addChild(self)
-//        addPhysics()
+        addPhysics()
     }
 
     required public init(coder decoder: NSCoder) {
@@ -69,6 +72,6 @@ public class Earth: PhysicsBody {
     }
     
     func addPhysics() {
-        physicsBody!.applyAngularImpulse(20.5)
+        physicsBody!.applyAngularImpulse(0.5)
     }
 }
