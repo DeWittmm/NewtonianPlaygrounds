@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A64B2F319EC3E73001AF5CA /* FreestandingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A64B2F219EC3E73001AF5CA /* FreestandingHelpers.swift */; };
+		0A64B2F419EC3E73001AF5CA /* FreestandingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A64B2F219EC3E73001AF5CA /* FreestandingHelpers.swift */; };
 		0A923C3B19E31CF0002F068D /* PhysicsScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0A923C3A19E31CF0002F068D /* PhysicsScene.sks */; };
 		0AA2F49019E31600004DC09B /* PhysicsWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */; };
 		0AA2F49119E31600004DC09B /* PhysicsWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */; };
@@ -21,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A64B2F219EC3E73001AF5CA /* FreestandingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreestandingHelpers.swift; sourceTree = "<group>"; };
 		0A923C3A19E31CF0002F068D /* PhysicsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PhysicsScene.sks; path = CircularMotion.playground/Resources/PhysicsScene.sks; sourceTree = "<group>"; };
 		0A9E232719E309870025C075 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0AA2F48919E30F38004DC09B /* contents.xcplayground */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = contents.xcplayground; path = CircularMotion.playground/contents.xcplayground; sourceTree = "<group>"; };
@@ -107,7 +110,7 @@
 				0AA2F48819E30F01004DC09B /* Circular Motion Playground */,
 				0AC6894B19EB7187000D2F3D /* PhysicsBodies */,
 				0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */,
-				0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */,
+				0A64B2F219EC3E73001AF5CA /* FreestandingHelpers.swift */,
 				0AA8CD8819E2600300397927 /* Supporting Files */,
 			);
 			path = NewtonianPlaygrounds;
@@ -116,6 +119,7 @@
 		0AA8CD8819E2600300397927 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */,
 				0AA8CD8919E2600300397927 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -274,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A64B2F319EC3E73001AF5CA /* FreestandingHelpers.swift in Sources */,
 				0AC6895019EB7FE4000D2F3D /* Star.swift in Sources */,
 				0AC6894D19EB7D8A000D2F3D /* ExposedPhysicsBody.swift in Sources */,
 				0AA2F49019E31600004DC09B /* PhysicsWorld.swift in Sources */,
@@ -290,6 +295,7 @@
 				0AC6895119EB7FE4000D2F3D /* Star.swift in Sources */,
 				0AA2F49119E31600004DC09B /* PhysicsWorld.swift in Sources */,
 				0AC6894A19EB7180000D2F3D /* Planet.swift in Sources */,
+				0A64B2F419EC3E73001AF5CA /* FreestandingHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

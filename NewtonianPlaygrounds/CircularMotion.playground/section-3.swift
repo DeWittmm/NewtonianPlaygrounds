@@ -3,7 +3,7 @@
 //Physics World 
 let world = PhysicsWorld()
 
-//Add Spaceship
+//Add celestial bodies
 let earth = Planet(.Earth)
 let sun = Star()
 

@@ -39,8 +39,8 @@ public class ExposedPhysicsBody: SKSpriteNode {
         
         //Add Physics Body
         physicsBody = SKPhysicsBody(texture: texture, size: size)
-        physicsBody!.linearDamping = 0.5
-        physicsBody!.mass = 0.1
+//        physicsBody!.linearDamping = 0.5
+//        physicsBody!.mass = 0.1
     }
     
     required public init(coder decoder: NSCoder) {
