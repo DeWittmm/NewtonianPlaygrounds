@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 DeWitt.PHYSICS.Playgrounds. All rights reserved.
 //
 
-public class Sun: PhysicsBody {
+public class Star: ExposedPhysicsBody {
     // MARK: Types
     
     struct ResourceIdentifiers {
@@ -14,28 +14,21 @@ public class Sun: PhysicsBody {
     }
 
     let SunCategory: UInt32 = 1 << 1
-
     
     // MARK: Initializers
     
-    public init(world: PhysicsWorld) {
-        let scene = world.scene
-
-        let center = CGPoint(x:CGRectGetMidX(scene.frame), y:CGRectGetMidY(scene.frame))
+    public init() {
         
         super.init(imageNamed: ResourceIdentifiers.sunImage)
         
-        position = center
         xScale = 0.5
         yScale = 0.5
         
-        //Setup Actions
-        addActions()
+        //Stars are not affected by Gravity
+        physicsBody!.affectedByGravity = false
         
         physicsBody!.categoryBitMask = SunCategory
-        physicsBody!.contactTestBitMask = SunCategory
-        
-        scene.addChild(self)
+        physicsBody!.contactTestBitMask = SunCategory        
     }
 
     required public init(coder decoder: NSCoder) {
@@ -43,7 +36,4 @@ public class Sun: PhysicsBody {
     }
     
     // MARK: Convenience
-    
-    override func addActions() {
-    }
 }

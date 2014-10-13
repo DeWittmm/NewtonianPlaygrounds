@@ -6,20 +6,18 @@
 //  Copyright (c) 2014 DeWitt.PHYSICS.Playgrounds. All rights reserved.
 //
 
-public class Earth: PhysicsBody {
-    // MARK: Types
-    
-    struct ResourceIdentifiers {
-        static let earthImage = "earth"
-    }
-    
-    
+//Excerpt From: Apple Inc. “The Swift Programming Language.” iBooks. https://itun.es/us/jEUH0.l
+public enum Planets: String {
+    case Earth = "earth"
+    case Mars = "mars"
+}
+
+public class Planet: ExposedPhysicsBody {
     // MARK: Public Properties
     
-    public let center:CGPoint
     public var yearLength: Double = 365.25 {
         didSet {
-            addActions()
+            freeOrbit()
         }
     }
     
@@ -31,25 +29,17 @@ public class Earth: PhysicsBody {
     
     // MARK: Initializers
     
-    public init(world: PhysicsWorld) {
-        let scene = world.scene
+    public init(_ planet: Planets) {
 
-        center = CGPoint(x:CGRectGetMidX(scene.frame), y:CGRectGetMidY(scene.frame))
-        
-        super.init(imageNamed: ResourceIdentifiers.earthImage)
+        super.init(imageNamed: planet.rawValue)
         
         xScale = 0.3
         yScale = 0.3
         
-        //Setup Actions
-        // addActions()
-        
         physicsBody!.categoryBitMask = EarthCategory
         physicsBody!.contactTestBitMask = EarthCategory
         physicsBody!.allowsRotation = true
-        
-        scene.addChild(self)
-        addPhysics()
+        physicsBody!.affectedByGravity = false
     }
 
     required public init(coder decoder: NSCoder) {
@@ -58,12 +48,12 @@ public class Earth: PhysicsBody {
     
     // MARK: Convenience
     
-    override func addActions() {
+    public func freeOrbit() {
         let time = NSTimeInterval(self.yearLength / self.yearToSecondRatio)
         
         let rotate = SKAction.rotateByAngle(CGFloat(-M_PI*2), duration: time)
         
-        let circlularPath = CGPathCreateWithEllipseInRect(CGRectMake(center.x-250, center.y-250, 500, 500), nil)
+        let circlularPath = CGPathCreateWithEllipseInRect(CGRectMake(position.x-250, position.y-250, 500, 500), nil)
         let orbit = SKAction.followPath(circlularPath, asOffset: false, orientToPath: true, duration: time)
         
         let actionGroup = SKAction.group([rotate, orbit])

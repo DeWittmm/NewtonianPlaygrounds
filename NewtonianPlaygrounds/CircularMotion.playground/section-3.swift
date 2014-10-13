@@ -4,10 +4,10 @@
 let world = PhysicsWorld()
 
 //Add Spaceship
-let earth = Earth(world: world)
-let sun = Sun(world: world)
+let earth = Planet(.Earth)
+let sun = Star()
+
+world.addBody(earth)
+world.addBody(sun)
 
 XCPShowView("Physics World", world.view)
-
-earth.velocity
-earth.angularVelocity

@@ -24,7 +24,11 @@ public class PhysicsWorld {
         return scene.physicsWorld
     }
     
-    public var field: SKFieldNode
+    public var center: CGPoint {
+        return CGPoint(x:CGRectGetMidX(scene.frame), y:CGRectGetMidY(scene.frame))
+    }
+    
+    public var field: SKFieldNode = SKFieldNode.radialGravityField()
     
     public var gravity: CGVector {
         get {
@@ -39,13 +43,7 @@ public class PhysicsWorld {
         view = SKView(frame: CGRect(x: 0, y: 0, width: 850, height: 638))
         
         scene = SKScene(fileNamed: ResourceIdentifiers.physicsScene)
-        field = SKFieldNode.radialGravityField()
-        
-        // Configure the view.
-        //Does not display in playgrounds :(
-//        view.showsFPS = true
-//        view.showsNodeCount = true
-        
+    
         scene.scaleMode = .AspectFill
         scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
@@ -56,7 +54,19 @@ public class PhysicsWorld {
         /* Sprite Kit applies additional optimizations to improve rendering performance */
         //        sceneView.ignoresSiblingOrder = true
         
-        scene.addChild(field)
         view.presentScene(scene)
+    }
+    
+    public func addBody(node: ExposedPhysicsBody) {
+        node.position = CGPoint(x:CGRectGetMidX(scene.frame), y:CGRectGetMidY(scene.frame))
+        
+        scene.addChild(node)
+    }
+    
+    public func activateGravityField() {
+        //Setup RadialGravityField
+        //        field.
+        
+        scene.addChild(field)
     }
 }

@@ -9,7 +9,7 @@
 import SpriteKit
 import AppKit
 
-public class PhysicsBody: SKSpriteNode {
+public class ExposedPhysicsBody: SKSpriteNode {
     // MARK: Public Properties
     
     public var mass: CGFloat {
@@ -41,14 +41,9 @@ public class PhysicsBody: SKSpriteNode {
         physicsBody = SKPhysicsBody(texture: texture, size: size)
         physicsBody!.linearDamping = 0.5
         physicsBody!.mass = 0.1
-        physicsBody!.affectedByGravity = false
     }
     
     required public init(coder decoder: NSCoder) {
         super.init(coder: decoder)
-    }
-    
-    func addActions() {
-        fatalError("addActions has not been implemented")
     }
 }
