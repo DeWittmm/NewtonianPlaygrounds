@@ -29,6 +29,7 @@
 		0AA2F48919E30F38004DC09B /* contents.xcplayground */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = contents.xcplayground; path = CircularMotion.playground/contents.xcplayground; sourceTree = "<group>"; };
 		0AA2F48A19E30F4D004DC09B /* fragment0.html */ = {isa = PBXFileReference; lastKnownFileType = text.html.documentation; name = fragment0.html; path = CircularMotion.playground/Documentation/fragment0.html; sourceTree = "<group>"; };
 		0AA2F48F19E31600004DC09B /* PhysicsWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsWorld.swift; sourceTree = "<group>"; };
+		0AA8567719F624B600A8904E /* CircularMotionSS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CircularMotionSS.png; sourceTree = "<group>"; };
 		0AA8CD8519E2600300397927 /* NewtonianPlaygrounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewtonianPlaygrounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA8CD8919E2600300397927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewtonianPlaygrounds.h; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		0AA8CD8819E2600300397927 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0AA8567719F624B600A8904E /* CircularMotionSS.png */,
 				0AA8CD8A19E2600300397927 /* NewtonianPlaygrounds.h */,
 				0AA8CD8919E2600300397927 /* Info.plist */,
 			);

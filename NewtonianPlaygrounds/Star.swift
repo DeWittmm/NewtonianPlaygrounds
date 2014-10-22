@@ -26,7 +26,9 @@ public class Star: ExposedPhysicsBody {
         
         //Stars are not affected by Gravity
         physicsBody!.affectedByGravity = false
-        
+//        physicsBody!.linearDamping = 5.0
+        physicsBody!.mass = 100000.0
+
         physicsBody!.categoryBitMask = SunCategory
         physicsBody!.contactTestBitMask = SunCategory        
     }

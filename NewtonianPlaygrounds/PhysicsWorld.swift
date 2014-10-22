@@ -8,7 +8,13 @@
 
 import SpriteKit
 
-public class PhysicsWorld {
+//You can check for protocol conformance only if your protocol is marked with the @objc attribute
+
+protocol UpdateBodyPropertiesDelegate {
+    var whenPropertiesUpdate: (Void -> Void)? { get set }
+}
+
+public class PhysicsWorld: NSObject, SKSceneDelegate {
     
     struct ResourceIdentifiers {
         static let physicsScene = "PhysicsScene"
@@ -16,6 +22,8 @@ public class PhysicsWorld {
             static let starBackground = "star_background"
         }
     }
+    
+    //MARK - Public Properties
     
     public let view: SKView
     public let scene: SKScene
@@ -39,11 +47,13 @@ public class PhysicsWorld {
         }
     }
     
-    public init() {
+    //MARK - Private Properties
+    var observationCount = 0
+    
+    override public init() {
         view = SKView(frame: CGRect(x: 0, y: 0, width: 850, height: 638))
         
         scene = SKScene(fileNamed: ResourceIdentifiers.physicsScene)
-    
         scene.scaleMode = .AspectFill
         scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
@@ -51,21 +61,45 @@ public class PhysicsWorld {
         let background = SKSpriteNode(texture:backgroundTexture, size: view.bounds.size)
         scene.addChild(background)
 
-        /* Sprite Kit applies additional optimizations to improve rendering performance */
-        //        sceneView.ignoresSiblingOrder = true
+        super.init()
+        scene.delegate = self
         
         view.presentScene(scene)
     }
     
+    //MARK - Physics Body delegate
+    public func update(currentTime: NSTimeInterval, forScene scene: SKScene) {
+//        println("update")
+    }
+    
+    public func didSimulatePhysicsForScene(scene: SKScene) {
+        let maxCount = 500
+        let observationRate = 2
+        observationCount++
+
+        for child in scene.children {
+            if let node = child as? ExposedPhysicsBody {
+                if (observationCount % observationRate) == 0
+                    && observationCount < maxCount {
+                    node.whenPropertiesUpdate?()
+                }
+            }
+        }
+    }
+    
+    //MARK - Helper methods
+    
     public func addBody(node: ExposedPhysicsBody) {
-        node.position = CGPoint(x:CGRectGetMidX(scene.frame), y:CGRectGetMidY(scene.frame))
+        node.position = center
         
         scene.addChild(node)
     }
     
     public func activateGravityField() {
         //Setup RadialGravityField
-        //        field.
+//        field.strength = 2.0
+//        field.exclusive = true
+        field.position = center
         
         scene.addChild(field)
     }
