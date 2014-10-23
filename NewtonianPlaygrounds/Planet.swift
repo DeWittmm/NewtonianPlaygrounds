@@ -10,20 +10,15 @@
 public enum Planets: String {
     case Earth = "earth"
     case Mars = "mars"
+    case Saturn = "saturn"
 }
 
 public class Planet: ExposedPhysicsBody {
     // MARK: Public Properties
     
-    public var yearLength: Double = 365.25 {
-        didSet {
-            freeOrbit()
-        }
-    }
+    public var yearLength: Double = 365.25
+    public var orbitRadius: CGFloat = 250
     
-    public var orbitRadius:CGFloat = 250
-    public var impulseMagnitude: CGFloat = 2.0
-
     // MARK: Internal Properties
     
     let yearToSecondRatio = 35.0
@@ -37,9 +32,10 @@ public class Planet: ExposedPhysicsBody {
         
         xScale = 0.3
         yScale = 0.3
-                
-        physicsBody!.linearDamping = 5.0
+        
         physicsBody!.mass = 100.0
+        physicsBody!.linearDamping = 0.0
+        physicsBody!.angularDamping = 0.0
         physicsBody!.categoryBitMask = EarthCategory
         physicsBody!.contactTestBitMask = EarthCategory
         physicsBody!.allowsRotation = true
@@ -67,17 +63,5 @@ public class Planet: ExposedPhysicsBody {
         let actionGroup = SKAction.group([rotate, orbitAction])
         
         runAction(SKAction.repeatActionForever(actionGroup))
-    }
-    
-    public func launchIntoOrbit() {
-//        physicsBody!.applyAngularImpulse(1.5)
-        
-        position = CGPoint(x: position.x + orbitRadius, y: position.y)
-        
-        let xComponent = cos(60) * impulseMagnitude
-        let yComponent = sin(40) * impulseMagnitude
-        let impulseVector = CGVector(dx: xComponent, dy: yComponent)
-
-        physicsBody!.applyImpulse(impulseVector)
     }
 }

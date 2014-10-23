@@ -23,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A61ABB519F9840200548EE7 /* section-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "section-1.swift"; path = "CircularMotion.playground/section-1.swift"; sourceTree = "<group>"; };
+		0A61ABB619F9840200548EE7 /* section-3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "section-3.swift"; path = "CircularMotion.playground/section-3.swift"; sourceTree = "<group>"; };
+		0A61ABB719F9840200548EE7 /* section-5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "section-5.swift"; path = "CircularMotion.playground/section-5.swift"; sourceTree = "<group>"; };
+		0A61ABB919F986EF00548EE7 /* section-1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "section-1.swift"; path = "Intro.playground/section-1.swift"; sourceTree = "<group>"; };
+		0A61ABBA19F986EF00548EE7 /* section-3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "section-3.swift"; path = "Intro.playground/section-3.swift"; sourceTree = "<group>"; };
 		0A64B2F219EC3E73001AF5CA /* FreestandingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreestandingHelpers.swift; sourceTree = "<group>"; };
 		0A923C3A19E31CF0002F068D /* PhysicsScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = PhysicsScene.sks; path = CircularMotion.playground/Resources/PhysicsScene.sks; sourceTree = "<group>"; };
 		0A9E232719E309870025C075 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -65,12 +70,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A61ABB819F9840700548EE7 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				0A61ABB519F9840200548EE7 /* section-1.swift */,
+				0A61ABB619F9840200548EE7 /* section-3.swift */,
+				0A61ABB719F9840200548EE7 /* section-5.swift */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		0A61ABBB19F986F200548EE7 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				0A61ABB919F986EF00548EE7 /* section-1.swift */,
+				0A61ABBA19F986EF00548EE7 /* section-3.swift */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
 		0AA2F48819E30F01004DC09B /* Circular Motion Playground */ = {
 			isa = PBXGroup;
 			children = (
 				0AA8CDA319E2605E00397927 /* CircularMotion.playground */,
 				0AA2F48919E30F38004DC09B /* contents.xcplayground */,
 				0A923C3A19E31CF0002F068D /* PhysicsScene.sks */,
+				0A61ABB819F9840700548EE7 /* Code */,
 				0AA2F48B19E30F50004DC09B /* Documentation */,
 			);
 			name = "Circular Motion Playground";
@@ -149,6 +174,7 @@
 			children = (
 				0AB125C219E66A1B005B170A /* Intro.playground */,
 				0AC6894419EB4381000D2F3D /* contents.xcplayground */,
+				0A61ABBB19F986F200548EE7 /* Code */,
 				0AC6894619EB4393000D2F3D /* Documentation */,
 			);
 			name = "Intro Playground";

@@ -48,4 +48,18 @@ public class ExposedPhysicsBody: SKSpriteNode, UpdateBodyPropertiesDelegate {
     required public init(coder decoder: NSCoder) {
         super.init(coder: decoder)
     }
+    
+    // MARK - Functions
+    
+    public func applyForce(force: CGVector) {
+        physicsBody!.applyForce(force)
+    }
+    
+    public func applyImpulse(impulse: CGVector) {
+        physicsBody!.applyImpulse(impulse)
+    }
+    
+    public func applyAngularImpulse(impulse: CGFloat) {
+        physicsBody!.applyAngularImpulse(impulse)
+    }
 }
