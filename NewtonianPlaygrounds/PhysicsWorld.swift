@@ -8,8 +8,10 @@
 
 import SpriteKit
 
-//You can check for protocol conformance only if your protocol is marked with the @objc attribute
+public typealias Point = CGPoint
+public typealias Vector = CGVector
 
+//You can check for protocol conformance only if your protocol is marked with the @objc attribute
 protocol UpdateBodyPropertiesDelegate {
     var whenPropertiesUpdate: (Void -> Void)? { get set }
 }
@@ -74,7 +76,7 @@ public class PhysicsWorld: NSObject, SKSceneDelegate {
     
     public func didSimulatePhysicsForScene(scene: SKScene) {
         let maxCount = 500
-        let observationRate = 2
+        let observationRate = 5
         observationCount++
 
         for child in scene.children {
@@ -100,7 +102,8 @@ public class PhysicsWorld: NSObject, SKSceneDelegate {
 //        field.strength = 2.0
 //        field.exclusive = true
         field.position = center
-        
+        field.falloff = 0.5
+
         scene.addChild(field)
     }
 }
