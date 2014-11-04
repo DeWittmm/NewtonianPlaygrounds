@@ -7,7 +7,7 @@ world.addBody(sun)
 let earth = Planet(.Earth)
 world.addBody(earth)
 
-let saturn = Planet(.Saturn)
-world.addBody(saturn)
+//let saturn = Planet(.Saturn)
+//world.addBody(saturn)
 
 XCPShowView("Physics World", world.view)

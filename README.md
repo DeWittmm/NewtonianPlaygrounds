@@ -11,6 +11,7 @@ These simple playgrounds are being developed to help students learn introductory
 The Circiular motion playground sets up a celestial "Physics World" (which encapsulates the SKScene and SKView) to demonstrate circular motion in the presence of a Radial Gravity Field. 
 
 ![Alt text](/NewtonianPlaygrounds/CircularMotionSS.png?raw=true "")
+![Alt text](/NewtonianPlaygrounds/CircularGraphSS.png?raw=true "Earth Velocity dx")
 
 ##Notes
 
