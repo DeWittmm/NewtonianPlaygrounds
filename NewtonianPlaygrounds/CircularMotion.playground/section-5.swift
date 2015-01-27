@@ -8,10 +8,9 @@ earth.orbitRadius //units?
 earth.position = Point(x: earth.orbitRadius, y: 0)
 
 let xComponent = 15.0 //Ns
-let yComponent = 6000.0 //Ns
+let yComponent = 60.0 //Ns
 let impulseVector = Vector(dx: xComponent, dy: yComponent)
 
-//earth.applyForce(impulseVector)
 earth.applyImpulse(impulseVector)
 earth.applyAngularImpulse(50.0)
 

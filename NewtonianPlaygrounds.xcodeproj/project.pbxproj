@@ -20,6 +20,8 @@
 		0AC6894E19EB7D8A000D2F3D /* ExposedPhysicsBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894C19EB7D8A000D2F3D /* ExposedPhysicsBody.swift */; };
 		0AC6895019EB7FE4000D2F3D /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894F19EB7FE4000D2F3D /* Star.swift */; };
 		0AC6895119EB7FE4000D2F3D /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6894F19EB7FE4000D2F3D /* Star.swift */; };
+		0ACE74631A7832B200A8016B /* FireParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE74621A7832B200A8016B /* FireParticle.sks */; };
+		0ACE74641A7832B200A8016B /* FireParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0ACE74621A7832B200A8016B /* FireParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,7 @@
 		0AC6894819EB7180000D2F3D /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		0AC6894C19EB7D8A000D2F3D /* ExposedPhysicsBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExposedPhysicsBody.swift; sourceTree = "<group>"; };
 		0AC6894F19EB7FE4000D2F3D /* Star.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		0ACE74621A7832B200A8016B /* FireParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = FireParticle.sks; path = CircularMotion.playground/Resources/FireParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 				0AA8CDA319E2605E00397927 /* CircularMotion.playground */,
 				0AA2F48919E30F38004DC09B /* contents.xcplayground */,
 				0A923C3A19E31CF0002F068D /* PhysicsScene.sks */,
+				0ACE74621A7832B200A8016B /* FireParticle.sks */,
 				0A61ABB819F9840700548EE7 /* Code */,
 				0AA2F48B19E30F50004DC09B /* Documentation */,
 			);
@@ -289,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A923C3B19E31CF0002F068D /* PhysicsScene.sks in Resources */,
+				0ACE74631A7832B200A8016B /* FireParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACE74641A7832B200A8016B /* FireParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

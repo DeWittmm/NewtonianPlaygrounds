@@ -11,15 +11,17 @@ import SpriteKit
 public typealias Point = CGPoint
 public typealias Vector = CGVector
 
-//You can check for protocol conformance only if your protocol is marked with the @objc attribute
+//You can check for protocol conformance 
+//only if your protocol is marked with the @objc attribute
 protocol UpdateBodyPropertiesDelegate {
     var whenPropertiesUpdate: (Void -> Void)? { get set }
 }
 
-public class PhysicsWorld: NSObject, SKSceneDelegate {
+public class PhysicsWorld: NSObject, SKSceneDelegate, SKPhysicsContactDelegate {
     
     struct ResourceIdentifiers {
         static let physicsScene = "PhysicsScene"
+        static let firePatricles = "FireParticle"
         struct ImageAssets {
             static let starBackground = "star_background"
         }
@@ -58,18 +60,20 @@ public class PhysicsWorld: NSObject, SKSceneDelegate {
         scene = SKScene(fileNamed: ResourceIdentifiers.physicsScene)
         scene.scaleMode = .AspectFill
         scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-        
+
         let backgroundTexture = SKTexture(imageNamed: ResourceIdentifiers.ImageAssets.starBackground)
         let background = SKSpriteNode(texture:backgroundTexture, size: view.bounds.size)
         scene.addChild(background)
 
         super.init()
         scene.delegate = self
-        
+        scene.physicsWorld.contactDelegate = self
+
         view.presentScene(scene)
     }
     
     //MARK - Physics Body delegate
+    
     public func update(currentTime: NSTimeInterval, forScene scene: SKScene) {
 //        println("update")
     }
@@ -89,11 +93,30 @@ public class PhysicsWorld: NSObject, SKSceneDelegate {
         }
     }
     
+    //MARK - Physics Contact Delegate
+    
+    public func didBeginContact(contact: SKPhysicsContact) {
+        let categoryA = contact.bodyA.categoryBitMask
+        let categoryB = contact.bodyB.categoryBitMask
+        
+        if (categoryA & StarCategory != 0) && (categoryB & StarCategory != 0) {
+            contact.bodyB.node!.removeFromParent()
+
+            //FIXME - It seems at the moment Playgrounds cannot handle particle physics
+//            fireDeathParticle.position = center
+//            fireDeathParticle.targetNode = contact.bodyA.node
+//            scene.addChild(fireDeathParticle)
+        }
+    }
+    
     //MARK - Helper methods
+    
+    var fireDeathParticle: SKEmitterNode = {
+        return SKEmitterNode(fileNamed: ResourceIdentifiers.firePatricles)
+        }()
     
     public func addBody(node: ExposedPhysicsBody) {
         node.position = center
-        
         scene.addChild(node)
     }
     

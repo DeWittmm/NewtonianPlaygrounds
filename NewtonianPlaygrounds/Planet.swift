@@ -13,18 +13,19 @@ public enum Planets: String {
     case Saturn = "saturn"
 }
 
+let PlanetCategory: UInt32 = 1 << 1
+
 public class Planet: ExposedPhysicsBody {
-    // MARK: Public Properties
+    // MARK - Public Properties
     
     public var yearLength: Double = 365.25
     public var orbitRadius: CGFloat = 250
     
-    // MARK: Internal Properties
+    // MARK - Internal Properties
     
     let yearToSecondRatio = 35.0
-    let EarthCategory: UInt32 = 1 << 1
 
-    // MARK: Initializers
+    // MARK - Initializers
     
     public init(_ planet: Planets) {
 
@@ -36,8 +37,8 @@ public class Planet: ExposedPhysicsBody {
         physicsBody!.mass = 100.0
         physicsBody!.linearDamping = 0.0
         physicsBody!.angularDamping = 0.0
-        physicsBody!.categoryBitMask = EarthCategory
-        physicsBody!.contactTestBitMask = EarthCategory
+        physicsBody!.categoryBitMask = PlanetCategory
+        physicsBody!.contactTestBitMask = PlanetCategory
         physicsBody!.allowsRotation = true
 //        physicsBody!.dynamic = true;
         
@@ -49,7 +50,7 @@ public class Planet: ExposedPhysicsBody {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: Convenience
+    // MARK - Actions
 
     public func freeOrbit() {
         let time = NSTimeInterval(self.yearLength / self.yearToSecondRatio)

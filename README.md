@@ -4,7 +4,7 @@
 
 > – John W. Gardner
 
-These simple playgrounds are being developed to help students learn introductory college physics, in a way that's hopefully a lot more fun than introductory college physics. 
+These simple playgrounds are being developed to help students learn introductory college physics in a way that's hopefully a lot more fun than introductory college physics. 
 
 
 ### Circular Motion
@@ -15,5 +15,7 @@ The Circular motion playground sets up a celestial "Physics World" (which encaps
 ![Alt text](/NewtonianPlaygrounds/CircularGraphSS.png?raw=true "Earth Velocity dx")
 
 ### Notes
+
+If opening the project for the first time, make sure you build the NewtonianPlaygrounds framework otherwise it will not be recognized by the playground. 
 
 Playgrounds utilizing SpriteKit must target OS X. 

@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 DeWitt.PHYSICS.Playgrounds. All rights reserved.
 //
 
+let StarCategory: UInt32 = 1 << 1
+
 public class Star: ExposedPhysicsBody {
     // MARK: Types
     
@@ -13,7 +15,6 @@ public class Star: ExposedPhysicsBody {
         static let sunImage = "sun"
     }
 
-    let SunCategory: UInt32 = 1 << 1
     
     // MARK: Initializers
     
@@ -29,8 +30,8 @@ public class Star: ExposedPhysicsBody {
 //        physicsBody!.linearDamping = 5.0
         physicsBody!.mass = 100000.0
 
-        physicsBody!.categoryBitMask = SunCategory
-        physicsBody!.contactTestBitMask = SunCategory        
+        physicsBody!.categoryBitMask = StarCategory
+        physicsBody!.contactTestBitMask = StarCategory        
     }
 
     required public init(coder decoder: NSCoder) {
